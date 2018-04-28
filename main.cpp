@@ -1,6 +1,6 @@
 #include <SFML/Audio.hpp>
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 int main()
@@ -11,9 +11,15 @@ int main()
     if (!music.openFromFile("mainTrack.ogg"))
     return -1; // erreur
     music.play();
+    string nom;
+    cout << "Veuillez choisir le nom de votre personnage -> " ;
+    cin >> nom;
 
-    int i;
-    cin >> i;
+
+
+
+
+
 
 
     return 0;
