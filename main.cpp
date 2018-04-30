@@ -1,11 +1,13 @@
 #include <SFML/Audio.hpp>
 #include <iostream>
 #include <string>
+#include "Fonctions.h"
+
 using namespace std;
 
 int main()
 {
-    cout << "##### SAO 0.1 #####" << endl <<endl;
+    enTete();
 
     sf::Music music;
     if (!music.openFromFile("mainTrack.ogg"))
@@ -14,13 +16,6 @@ int main()
     string nom;
     cout << "Veuillez choisir le nom de votre personnage -> " ;
     cin >> nom;
-
-
-
-
-
-
-
 
     return 0;
 }
