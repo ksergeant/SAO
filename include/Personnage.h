@@ -1,0 +1,30 @@
+#ifndef PERSONNAGE_H
+#define PERSONNAGE_H
+
+#include <string>
+using namespace std;
+
+class Personnage
+{
+    public:
+        Personnage(string nom);
+        void getStats();
+        void getNom();
+
+        virtual ~Personnage();
+
+    protected:
+
+    private:
+        string nom;
+        int niveau = 1;
+        int vie = 100;
+        int defense = 0;
+        int xp = 0;
+        int degats = 5;
+
+
+
+};
+
+#endif // PERSONNAGE_H
