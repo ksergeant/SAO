@@ -8,21 +8,32 @@ using namespace std;
 
 int main()
 {
+    int choix = 0;
     enTete();
+    ecranDeDemarrage();
+    cin >> choix;
+    switch(choix){
+        case 1:
+            nouvellePartie();
+            break;
+        case 2:
+            continuerPartie();
+            break;
+        case 3:
+            quitterLeJeu();
+            break;
+        default:
+            cout << "Erreur dans votre choix" <<endl;
+            break;
+    }
+
+    /*
     sf::Music music;
     if (!music.openFromFile("mainTrack.ogg"))
     return -1; // erreur
 
     music.play();
+    */
 
-    string nom;
-    cout << "Veuillez choisir le nom de votre personnage -> " ;
-    cin >> nom;
-    Personnage Perso1(nom);
-    purge();
-    enTete();
-    intro();
-    Perso1.getNom();
-    Perso1.getStats();
     return 0;
 }
