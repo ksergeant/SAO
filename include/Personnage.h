@@ -7,6 +7,7 @@ using namespace std;
 class Personnage
 {
     public:
+        Personnage();
         Personnage(string nom);
         void getStats();
         void getNom();

@@ -63,6 +63,7 @@
 		<Unit filename="include/Etage.h" />
 		<Unit filename="include/Guerrier.h" />
 		<Unit filename="include/Jeu.h" />
+		<Unit filename="include/Menu.h" />
 		<Unit filename="include/Monde.h" />
 		<Unit filename="include/Partie.h" />
 		<Unit filename="include/Personnage.h" />
@@ -88,6 +89,7 @@
 		<Unit filename="src/Etage.cpp" />
 		<Unit filename="src/Guerrier.cpp" />
 		<Unit filename="src/Jeu.cpp" />
+		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/Monde.cpp" />
 		<Unit filename="src/Partie.cpp" />
 		<Unit filename="src/Personnage.cpp" />

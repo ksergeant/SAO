@@ -3,6 +3,10 @@
 
 using namespace std;
 
+Personnage::Personnage(){
+
+}
+
 Personnage::Personnage(string nom){
     this->nom = nom;
 }
