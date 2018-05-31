@@ -2,6 +2,9 @@
 #define JEU_H
 
 #include <iostream>
+#include "GestionAffichage.h"
+#include "Partie.h"
+
 using namespace std;
 
 class Jeu
@@ -9,12 +12,18 @@ class Jeu
     public:
         Jeu();
         virtual ~Jeu();
-        bool Stop();
+        void gameLaunch();
+        void gameRunning();
+        bool gameStop();
+
 
     protected:
 
     private:
-        bool gameStart;
+         bool etatGame;
+        Partie lesParties[3];
+
+
 
 };
 

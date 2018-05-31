@@ -10,26 +10,11 @@ using namespace std;
 int main()
 {
     Jeu jeu1;
-    int choix = 0;
-    enTete();
 
-    ecranDeDemarrage();
-    cin >> choix;
-    switch(choix){
-        case 1:
-            nouvellePartie();
-            break;
-        case 2:
-            continuerPartie();
-            break;
-        case 3:
-             jeu1.Stop();
-            quitterLeJeu();
-            break;
-        default:
-            cout << "Erreur dans votre choix" <<endl;
-            break;
-    }
+
+    jeu1.gameLaunch();
+
+
 
     /*
     sf::Music music;

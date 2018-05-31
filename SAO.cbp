@@ -61,6 +61,7 @@
 		<Unit filename="include/Carte.h" />
 		<Unit filename="include/Ennemi.h" />
 		<Unit filename="include/Etage.h" />
+		<Unit filename="include/GestionAffichage.h" />
 		<Unit filename="include/Guerrier.h" />
 		<Unit filename="include/Jeu.h" />
 		<Unit filename="include/Menu.h" />
@@ -87,6 +88,7 @@
 		<Unit filename="src/Carte.cpp" />
 		<Unit filename="src/Ennemi.cpp" />
 		<Unit filename="src/Etage.cpp" />
+		<Unit filename="src/GestionAffichage.cpp" />
 		<Unit filename="src/Guerrier.cpp" />
 		<Unit filename="src/Jeu.cpp" />
 		<Unit filename="src/Menu.cpp" />

@@ -1,5 +1,5 @@
 #include "Personnage.h"
-#include "../Fonctions.h"
+
 
 using namespace std;
 
