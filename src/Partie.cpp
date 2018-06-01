@@ -36,8 +36,60 @@ void Partie::continuerPartie(){
 }
 
 void Partie::partieRunning(){
-
+        int choix = 0;
     while (etatPartie==true){
+        GestionAffichage::menuPrincipal();
+        cin >> choix;
+
+            switch(choix){
+
+                case 1:
+                     GestionAffichage::purge();
+                     GestionAffichage::enTete();
+                     cout <<"Bienvienue dans la Boutique" <<endl;
+                break;
+
+                case 2:
+                     GestionAffichage::purge();
+                     GestionAffichage::enTete();
+                     cout <<"Bienvenue dans la Zone Aventure" <<endl;
+                break;
+
+                case 3:
+                    GestionAffichage::purge();
+                     GestionAffichage::enTete();
+                    cout <<"Bienvenue dans la Zone Labyrinthique" <<endl;
+                break;
+
+                case 4:
+                    GestionAffichage::purge();
+                     GestionAffichage::enTete();
+                    cout <<"Bienvenue dans la Zone du Boss" <<endl;
+                break;
+
+                case 5:
+                    GestionAffichage::purge();
+                     GestionAffichage::enTete();
+                cout <<"Sauvegarde la partie en cours" <<endl;
+                break;
+
+                case 6:
+                    GestionAffichage::purge();
+                     GestionAffichage::enTete();
+                    cout << "fermeture de la partie" <<endl;
+                    etatPartie=false;
+                break;
+
+                default:
+                    GestionAffichage::purge();
+                     GestionAffichage::enTete();
+                     cout << "Erreur dans votre choix" <<endl;
+                break;
+
+            }
+
+
+
 
 
     }
