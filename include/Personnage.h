@@ -12,7 +12,7 @@ class Personnage
         Personnage(string nom);
         void getStats();
         void getNom();
-
+        void setNom(string name);
         virtual ~Personnage();
 
     protected:

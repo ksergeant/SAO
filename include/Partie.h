@@ -2,7 +2,9 @@
 #define PARTIE_H
 
 #include <iostream>
+#include <string>
 #include "GestionAffichage.h"
+#include "Personnage.h"
 using namespace std;
 class Partie
 {
@@ -17,6 +19,7 @@ class Partie
     protected:
 
     private:
+        Personnage Perso1;
         bool etatPartie;
 };
 
