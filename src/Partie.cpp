@@ -30,6 +30,7 @@ void Partie::continuerPartie(){
 }
 
 void Partie::partieRunning(){
+    etatPartie = true;
         int choix = 0;
     while (etatPartie==true){
         GestionAffichage::menuPrincipal();
