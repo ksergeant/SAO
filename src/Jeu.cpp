@@ -1,5 +1,6 @@
 #include "Jeu.h"
 
+using namespace std;
 
 Jeu::Jeu()
 {
@@ -16,6 +17,7 @@ void Jeu::gameLaunch(){
     etatGame = true;
 
     GestionAffichage::enTete();
+
     gameRunning();
 
 
@@ -34,11 +36,11 @@ void Jeu::gameRunning(){
             GestionAffichage::purge();
             GestionAffichage::enTete();
             GestionAffichage::nouvellePartie();
-            lesParties[0].nouvellePartie();
-            lesParties[0].partieRunning();
+           // lesParties[0].nouvellePartie();
+           // lesParties[0].partieRunning();
             break;
         case 2:
-            lesParties[0].continuerPartie();
+           // lesParties[0].continuerPartie();
             break;
         case 3:
            gameStop();
@@ -59,3 +61,9 @@ etatGame=false;
 cout << "Fermeture du jeu" <<endl;
 return etatGame;
 }
+/*
+int Jeu::getNombrePartie(){
+
+   return nombrePartie;
+}
+*/

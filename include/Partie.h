@@ -5,7 +5,9 @@
 #include <string>
 #include "GestionAffichage.h"
 #include "Personnage.h"
+
 using namespace std;
+
 class Partie
 {
     public:
@@ -15,10 +17,13 @@ class Partie
         void continuerPartie();
         void partieRunning();
         void partieStop();
+        void sauvegardePartie();
+        string getName();
 
     protected:
 
     private:
+        string name;
         Personnage Perso1;
         bool etatPartie;
 };

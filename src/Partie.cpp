@@ -4,11 +4,13 @@ using namespace std;
 Partie::Partie()
 {
     //ctor
+
 }
 
 Partie::~Partie()
 {
     //dtor
+
 }
 
 void Partie::nouvellePartie(){
@@ -32,6 +34,7 @@ void Partie::continuerPartie(){
 void Partie::partieRunning(){
     etatPartie = true;
         int choix = 0;
+
     while (etatPartie==true){
         GestionAffichage::menuPrincipal();
         cin >> choix;
@@ -66,6 +69,7 @@ void Partie::partieRunning(){
                     GestionAffichage::purge();
                      GestionAffichage::enTete();
                 cout <<"Sauvegarde la partie en cours" <<endl;
+                    sauvegardePartie();
                 break;
 
                 case 6:
@@ -95,4 +99,45 @@ void Partie::partieStop(){
 etatPartie = false;
 
 }
+
+void Partie::sauvegardePartie(){
+    string nom;
+    GestionAffichage::sauve();
+    cin >>nom;
+    name = nom; // nom de la partie
+    cout << "Nom de la Partie : "<< getName() <<endl;
+}
+
+string Partie::getName(){
+
+return name;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

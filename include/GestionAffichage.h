@@ -22,11 +22,15 @@ class GestionAffichage
         static void ecranDeDemarrage();
         static void nouvellePartie();
         static void continuerPartie();
+        static void sauve();
+        static void nombrePartie();
 
 
     protected:
 
     private:
+
+
 };
 
 #endif // GESTIONAFFICHAGE_H

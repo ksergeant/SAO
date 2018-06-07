@@ -1,10 +1,8 @@
 #ifndef JEU_H
 #define JEU_H
 
-#include <iostream>
-#include "GestionAffichage.h"
 #include "Partie.h"
-
+#include <vector>
 using namespace std;
 
 class Jeu
@@ -15,13 +13,16 @@ class Jeu
         void gameLaunch();
         void gameRunning();
         bool gameStop();
-
+        static int getNombrePartie();
 
     protected:
 
     private:
-         bool etatGame;
-        Partie lesParties[3];
+        bool etatGame;
+        vector <Partie> lesParties;
+
+
+
 
 
 

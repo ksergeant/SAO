@@ -9,13 +9,9 @@ using namespace std;
 
 int main()
 {
+
     Jeu jeu1;
-
-
     jeu1.gameLaunch();
-
-
-
     /*
     sf::Music music;
     if (!music.openFromFile("Sounds\mainTrack.ogg"))

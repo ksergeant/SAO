@@ -45,5 +45,19 @@ void GestionAffichage::nouvellePartie(){
 
 }
 void GestionAffichage::continuerPartie(){
+    cout << "Partie disponible";
 
 }
+
+void GestionAffichage::sauve(){
+    cout << "Veuillez choisir un nom pour sauvegarder la partie -> " ;
+
+}
+
+
+void GestionAffichage::nombrePartie(){
+
+cout << "Nombre de parties : ";
+
+}
+
