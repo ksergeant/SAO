@@ -1,26 +1,24 @@
 #include <SFML/Audio.hpp>
 #include <iostream>
 #include <string>
+#include "Jeu.h"
+#include "Fonctions.h"
+#include "Personnage.h"
+
 using namespace std;
 
 int main()
 {
-    cout << "##### SAO 0.1 #####" << endl <<endl;
 
+    Jeu jeu1;
+    jeu1.gameLaunch();
+    /*
     sf::Music music;
-    if (!music.openFromFile("mainTrack.ogg"))
+    if (!music.openFromFile("Sounds\mainTrack.ogg"))
     return -1; // erreur
+
     music.play();
-    string nom;
-    cout << "Veuillez choisir le nom de votre personnage -> " ;
-    cin >> nom;
-
-
-
-
-
-
-
+    */
 
     return 0;
 }

@@ -15,6 +15,7 @@
 					<Add option="-g" />
 					<Add option="-DSFML_STATIC" />
 					<Add directory="../../../../SFML-2.4.2/include" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-d" />
@@ -32,6 +33,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -52,6 +54,23 @@
 		<Linker>
 			<Add directory="C:/SFML-2.4.2/lib" />
 		</Linker>
+		<Unit filename="Fonctions.cpp" />
+		<Unit filename="Fonctions.h" />
+		<Unit filename="include/Boss.h" />
+		<Unit filename="include/Boutique.h" />
+		<Unit filename="include/Carte.h" />
+		<Unit filename="include/Ennemi.h" />
+		<Unit filename="include/Etage.h" />
+		<Unit filename="include/GestionAffichage.h" />
+		<Unit filename="include/Guerrier.h" />
+		<Unit filename="include/Jeu.h" />
+		<Unit filename="include/Menu.h" />
+		<Unit filename="include/Monde.h" />
+		<Unit filename="include/Partie.h" />
+		<Unit filename="include/Personnage.h" />
+		<Unit filename="include/ZoneAventure.h" />
+		<Unit filename="include/ZoneBoss.h" />
+		<Unit filename="include/ZoneLaby.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="openal32.dll" />
 		<Unit filename="sfml-audio-2.dll" />
@@ -64,6 +83,21 @@
 		<Unit filename="sfml-system-d-2.dll" />
 		<Unit filename="sfml-window-2.dll" />
 		<Unit filename="sfml-window-d-2.dll" />
+		<Unit filename="src/Boss.cpp" />
+		<Unit filename="src/Boutique.cpp" />
+		<Unit filename="src/Carte.cpp" />
+		<Unit filename="src/Ennemi.cpp" />
+		<Unit filename="src/Etage.cpp" />
+		<Unit filename="src/GestionAffichage.cpp" />
+		<Unit filename="src/Guerrier.cpp" />
+		<Unit filename="src/Jeu.cpp" />
+		<Unit filename="src/Menu.cpp" />
+		<Unit filename="src/Monde.cpp" />
+		<Unit filename="src/Partie.cpp" />
+		<Unit filename="src/Personnage.cpp" />
+		<Unit filename="src/ZoneAventure.cpp" />
+		<Unit filename="src/ZoneBoss.cpp" />
+		<Unit filename="src/ZoneLaby.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
