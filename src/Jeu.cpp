@@ -36,6 +36,7 @@ void Jeu::gameRunning(){
             GestionAffichage::purge();
             GestionAffichage::enTete();
             GestionAffichage::nouvellePartie();
+
            // lesParties[0].nouvellePartie();
            // lesParties[0].partieRunning();
             break;
