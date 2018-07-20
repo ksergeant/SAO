@@ -13,13 +13,13 @@ class Jeu
         void gameLaunch();
         void gameRunning();
         bool gameStop();
-        static int getNombrePartie();
+
 
     protected:
 
     private:
         bool etatGame;
-        vector <Partie> lesParties;
+        vector <Partie> lesParties; // stockage des parties
 
 
 

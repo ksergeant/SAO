@@ -13,6 +13,7 @@ Jeu::~Jeu()
     //dtor
 }
 
+// Fonction d'entree du jeu
 void Jeu::gameLaunch(){
     etatGame = true;
 
@@ -23,34 +24,38 @@ void Jeu::gameLaunch(){
 
 }
 
+// fonction principale  qui gere le menu de démarrage
 void Jeu::gameRunning(){
     int choix = 0;
-
 
     while(etatGame==true){
 
     GestionAffichage::ecranDeDemarrage();
-         cin >> choix;
-        switch(choix){
-        case 1:
-            GestionAffichage::purge();
-            GestionAffichage::enTete();
-            GestionAffichage::nouvellePartie();
+        cin >> choix;
 
-           // lesParties[0].nouvellePartie();
-           // lesParties[0].partieRunning();
+        // selon le choix effectué le switch case active la case en question
+        switch(choix){
+            case 1:
+                GestionAffichage::purge();
+                GestionAffichage::enTete();
+                GestionAffichage::nouvellePartie();
+
+                // lesParties[0].nouvellePartie();
+                // lesParties[0].partieRunning();
             break;
-        case 2:
-           // lesParties[0].continuerPartie();
+
+            case 2:
+                // lesParties[0].continuerPartie();
             break;
-        case 3:
-           gameStop();
+
+            case 3:
+            gameStop();
             break;
-        default:
+
+            default:
             cout << "Erreur dans votre choix" <<endl;
             break;
-    }
-
+        }
 
     }
 
@@ -62,9 +67,3 @@ etatGame=false;
 cout << "Fermeture du jeu" <<endl;
 return etatGame;
 }
-/*
-int Jeu::getNombrePartie(){
-
-   return nombrePartie;
-}
-*/

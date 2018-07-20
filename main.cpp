@@ -2,7 +2,6 @@
 #include <iostream>
 #include <string>
 #include "Jeu.h"
-#include "Fonctions.h"
 #include "Personnage.h"
 
 using namespace std;

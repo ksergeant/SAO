@@ -5,7 +5,7 @@
 #include <string>
 #include "GestionAffichage.h"
 #include "Personnage.h"
-
+#include "Selecteur.h"
 using namespace std;
 
 class Partie

@@ -20,9 +20,9 @@ void Partie::nouvellePartie(){
     cout << "Veuillez choisir le nom de votre personnage -> " ;
     cin >> nom ;
     cout <<endl;
-    Perso1.setNom(nom);
-    Perso1.getNom();
-    Perso1.getStats();
+    Perso1.setNom(nom); // l'objet Perso1 contenu dans partie utilise la méthode set pour modifier l'attribut nom contenu dans Perso1
+    Perso1.getNom();    // affiche l'attribut nom du Perso1
+    Perso1.getStats();  // affiche les attributs concernant les stats du Perso1
 
 }
 
