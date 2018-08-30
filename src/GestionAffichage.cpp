@@ -28,13 +28,12 @@ void GestionAffichage::menuPrincipal(){
 
 }
 
-// intro lors d'une nouvelle partie
+// introduction au lancement du jeu
 void GestionAffichage::intro(){
-    cout << "Bienvenue dans l'Aincrad ! Vous devez terminer les 100 etages pour gagner le jeu." <<endl<<endl;
-    cout << "Il y a trois zones par etage : " <<endl;
-    cout << "- La zone Aventure pour monter en niveaux, il faut battre 20 ennemis pour debloquer la zone labyrinthique." << endl;
-    cout << "- La zone Labyrinthique, il faut tuer tous les ennemis de cette zone pour debloquer la zone du Boss." <<endl;
-    cout << "- La zone du Boss, il faut tuer le boss pour passer a l'etage superieur." <<endl<<endl;
+
+cout << " Ecran Titre" <<endl <<endl;
+
+
 }
 
 // efface l'ecran de la console
@@ -51,6 +50,11 @@ void GestionAffichage::ecranDeDemarrage(){
 
 // affichage d'une nouvelle partie
 void GestionAffichage::nouvellePartie(){
+    cout << "Bienvenue dans l'Aincrad ! Vous devez terminer les 100 etages pour gagner le jeu." <<endl<<endl;
+    cout << "Il y a trois zones par etage : " <<endl;
+    cout << "- La zone Aventure pour monter en niveaux, il faut battre 20 ennemis pour debloquer la zone labyrinthique." << endl;
+    cout << "- La zone Labyrinthique, il faut tuer tous les ennemis de cette zone pour debloquer la zone du Boss." <<endl;
+    cout << "- La zone du Boss, il faut tuer le boss pour passer a l'etage superieur." <<endl<<endl;
 
 }
 

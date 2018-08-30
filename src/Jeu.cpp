@@ -19,6 +19,9 @@ void Jeu::gameLaunch(){
 
     GestionAffichage::enTete();
 
+    GestionAffichage::intro();
+    int c =_getch();
+
     gameRunning();
 
 

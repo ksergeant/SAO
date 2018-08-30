@@ -15,7 +15,7 @@ Partie::~Partie()
 
 void Partie::nouvellePartie(){
     cout << "Creation d'une nouvelle partie" << endl;
-    GestionAffichage::intro();
+    GestionAffichage::nouvellePartie();
     string nom;
     cout << "Veuillez choisir le nom de votre personnage -> " ;
     cin >> nom ;
