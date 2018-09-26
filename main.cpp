@@ -10,6 +10,8 @@ int main()
 {
 
     Jeu jeu1;
+
+    cout << "Lancement du jeu" << endl;
     jeu1.gameLaunch();
     /*
     sf::Music music;

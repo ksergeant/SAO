@@ -22,7 +22,7 @@ void Selecteur::Locate(int x,int y)
     SetConsoleCursorPosition(H,C);
 }
 // gestion affichage du selecteur
-void Selecteur::Afficher(int curs, Menu menu1)
+void Selecteur::Afficher(int curs)
 {
     Locate(6,2);
 //    printf("%c ",(curs==0)?'>':' '); cout << menu1.getNouvellePartie() <<endl;
@@ -35,13 +35,13 @@ void Selecteur::Afficher(int curs, Menu menu1)
     Locate(6,7);
 }
 
-int Selecteur::Choisir(Menu menu1)
+int Selecteur::ChoisirMenuPrincipal()
 {
     int curs = 0;
     int touche;
     do
     {
-        Afficher(curs, menu1);
+        Afficher(curs);
         touche = _getch();
         if (touche==0xE0) // fleche : le code fleche renvoie 2 caracteres.
         {

@@ -36,7 +36,7 @@ void Partie::partieRunning(){
         int choix = 0;
 
     while (etatPartie==true){
-        GestionAffichage::menuPrincipal();
+        GestionAffichage::menuDuJeu();
         cin >> choix;
 
             switch(choix){

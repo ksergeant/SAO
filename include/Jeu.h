@@ -1,8 +1,11 @@
 #ifndef JEU_H
 #define JEU_H
 
-#include "Partie.h"
 #include <vector>
+#include "Selecteur.h"
+#include "Partie.h"
+#include "Menu.h"
+
 using namespace std;
 
 class Jeu
@@ -13,6 +16,7 @@ class Jeu
         void gameLaunch();
         void gameRunning();
         bool gameStop();
+        void initialiseMenu();
 
 
     protected:
@@ -20,8 +24,8 @@ class Jeu
     private:
         bool etatGame;
         vector <Partie> lesParties; // stockage des parties
-
-
+        Menu lesMenusJeu[255];
+        Selecteur monSelecteur;
 
 
 

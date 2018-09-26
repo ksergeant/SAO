@@ -14,24 +14,27 @@ GestionAffichage::~GestionAffichage()
 
 // affichage de l'entete du programme
 void GestionAffichage::enTete(){
-    cout << "##### SAO 0.1 by MOKS #####" << endl <<endl;
+    cout << "       SAO 0.1 by MOKS      " << endl <<endl;
 }
 
-// affichage du menu principal
-void GestionAffichage::menuPrincipal(){
+// affichage du menu du jeu
+void GestionAffichage::menuDuJeu(){
+
+    cout <<"Menu du jeu" <<endl <<endl;
     cout <<"[1]- Boutique" <<endl;
-    cout <<"[2]- Zone Aventure" <<endl;
-    cout <<"[3]- Zone Labyrinthique" <<endl;
-    cout <<"[4]- Zone du Boss" <<endl;
-    cout <<"[5]- Sauvegarder la partie" <<endl;
-    cout <<"[6]- Quitter la partie" <<endl<<endl;
+    cout <<"[2]- Inventaire"<<endl;
+    cout <<"[3]- Zone Aventure" <<endl;
+    cout <<"[4]- Zone Labyrinthique" <<endl;
+    cout <<"[5]- Zone du Boss" <<endl;
+    cout <<"[6]- Sauvegarder la partie" <<endl;
+    cout <<"[7]- Quitter la partie" <<endl<<endl;
 
 }
 
-// introduction au lancement du jeu
-void GestionAffichage::intro(){
+// affichage de l'ecran de démarrage du jeu
+void GestionAffichage::ecranDeDemarrage(){
 
-cout << " Ecran Titre" <<endl <<endl;
+cout << " Ecran de demarrage" <<endl <<endl;
 
 
 }
@@ -41,11 +44,15 @@ void GestionAffichage::purge(){
     system("cls");
 }
 
-// affichage de l'ecran de démarrage du jeu
-void GestionAffichage::ecranDeDemarrage(){
+// affichage du menu principal
+void GestionAffichage::menuPrincipal(){
+    cout << "Menu Principal" <<endl<<endl;
     cout << "[1]- Nouvelle partie " <<endl;
-    cout << "[2]- Continuer la partie" <<endl;
-    cout << "[3]- Quitter le jeu" <<endl<<endl;
+    cout << "[2]- Charger" <<endl;
+    cout << "[3]- Statistiques" <<endl;
+    cout << "[4]- Options" <<endl;
+    cout << "[5]- Credits" <<endl;
+    cout << "[6]- Quitter le jeu" <<endl<<endl;
 }
 
 // affichage d'une nouvelle partie
@@ -55,7 +62,6 @@ void GestionAffichage::nouvellePartie(){
     cout << "- La zone Aventure pour monter en niveaux, il faut battre 20 ennemis pour debloquer la zone labyrinthique." << endl;
     cout << "- La zone Labyrinthique, il faut tuer tous les ennemis de cette zone pour debloquer la zone du Boss." <<endl;
     cout << "- La zone du Boss, il faut tuer le boss pour passer a l'etage superieur." <<endl<<endl;
-
 }
 
 // affichage des parties disponibles pour continuer la partie

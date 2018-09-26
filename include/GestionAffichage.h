@@ -17,6 +17,7 @@ class GestionAffichage
 
         static void enTete();
         static void menuPrincipal();
+        static void menuDuJeu();
         static void intro();
         static void purge();
         static void ecranDeDemarrage();

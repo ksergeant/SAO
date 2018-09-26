@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
-#include "Menu.h"
+
 
 using namespace std;
 
@@ -16,8 +16,8 @@ class Selecteur
         Selecteur();
         virtual ~Selecteur();
         void Locate(int x,int y);
-        void Afficher(int curs, Menu menu1);
-        int Choisir(Menu menu1);
+        void Afficher(int curs);
+        int ChoisirMenuPrincipal();
 
     protected:
 

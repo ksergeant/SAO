@@ -6,8 +6,9 @@
 #include "GestionAffichage.h"
 #include "Personnage.h"
 #include "Selecteur.h"
-using namespace std;
+#include "Menu.h"
 
+using namespace std;
 class Partie
 {
     public:
@@ -23,6 +24,7 @@ class Partie
     protected:
 
     private:
+        Menu lesMenuPartie[255];
         string name;
         Personnage Perso1;
         bool etatPartie;
