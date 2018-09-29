@@ -8,10 +8,8 @@ using namespace std;
 
 int main()
 {
-
     Jeu jeu1;
-
-    cout << "Lancement du jeu" << endl;
+    GestionAffichage::colorConsole(10);
     jeu1.gameLaunch();
     /*
     sf::Music music;

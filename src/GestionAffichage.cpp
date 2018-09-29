@@ -14,7 +14,7 @@ GestionAffichage::~GestionAffichage()
 
 // affichage de l'entete du programme
 void GestionAffichage::enTete(){
-    cout << "       SAO 0.1 by MOKS      " << endl <<endl;
+    cout << "           SAO 0.1 by MOKS      " << endl <<endl;
 }
 
 // affichage du menu du jeu
@@ -34,7 +34,7 @@ void GestionAffichage::menuDuJeu(){
 // affichage de l'ecran de démarrage du jeu
 void GestionAffichage::ecranDeDemarrage(){
 
-cout << " Ecran de demarrage" <<endl <<endl;
+cout << " \n           Ecran de demarrage" <<endl <<endl;
 
 
 }
@@ -77,4 +77,11 @@ void GestionAffichage::sauve(){
 }
 
 
+void GestionAffichage::colorConsole(int k){
 
+
+SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), k);
+
+
+
+}

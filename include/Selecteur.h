@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
-
+#include "GestionAffichage.h"
 
 using namespace std;
 

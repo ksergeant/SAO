@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
-
+#include <windows.h>
 
 using namespace std;
 
@@ -25,7 +25,7 @@ class GestionAffichage
         static void continuerPartie();
         static void sauve();
         static void nombrePartie();
-
+        static void colorConsole(int k);
 
     protected:
 

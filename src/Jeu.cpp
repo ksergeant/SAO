@@ -32,6 +32,8 @@ void Jeu::gameLaunch(){
     etatGame = true;
 
     GestionAffichage::enTete();
+
+    cout << "        -> Lancement du jeu" << endl;
     GestionAffichage::ecranDeDemarrage();
     int c =_getch();
 
