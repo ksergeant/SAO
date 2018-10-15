@@ -43,54 +43,81 @@ void Jeu::gameLaunch(){
 
 // fonction principale  qui gere le menu de démarrage
 void Jeu::gameRunning(){
-    int choix = 0;
-
+int choix = 0;
     while(etatGame==true){
         GestionAffichage::purge();
         GestionAffichage::enTete();
         initialiseMenu();
 
-        while (choix !=7){
-                lesMenusJeu[0].afficheOptions();
-                choix = _getch();
-    // selon le choix effectué le switch case active la case en question
-        switch(choix){
-            case 1:
-                GestionAffichage::purge();
-                GestionAffichage::enTete();
-                GestionAffichage::nouvellePartie();
-
-                // lesParties[0].nouvellePartie();
-                // lesParties[0].partieRunning();
-            break;
-
-            case 2:
-                // lesParties[0].continuerPartie();
-            break;
-
-            case 3:
-            gameStop();
-            break;
-
-            case 4:
-            break;
-
-            case 5:
-            break;
-
-            case 6:
-            break;
-
-            case 7:
-            break;
+        while(etatGame == true){
+            lesMenusJeu[0].afficheOptions();
+            choix = lesMenusJeu[0].getSelecteurMenuPrincipal();
 
 
-            default:
-            cout << "Erreur dans votre choix" <<endl;
-            break;
+
+
+        // selon le choix effectué le switch case active la case en question
+                switch(choix){
+                    case 0:
+                    GestionAffichage::purge();
+                    GestionAffichage::enTete();
+                    GestionAffichage::nouvellePartie();
+                    Sleep(2000);
+                    GestionAffichage::purge();
+                    GestionAffichage::enTete();
+
+                    // lesParties[0].nouvellePartie();
+                    // lesParties[0].partieRunning();
+                    break;
+
+                    case 1:
+                        GestionAffichage::purge();
+                        GestionAffichage::enTete();
+                        cout << "Continue la partie"<<endl;
+                        Sleep(2000);
+                    GestionAffichage::purge();
+                    GestionAffichage::enTete();
+                        // lesParties[0].continuerPartie();
+                    break;
+
+                    case 2:
+                        GestionAffichage::purge();
+                        GestionAffichage::enTete();
+                        cout << "stats"<<endl;
+                        Sleep(2000);
+                    GestionAffichage::purge();
+                    GestionAffichage::enTete();
+
+                    break;
+
+                    case 3:
+                        GestionAffichage::purge();
+                        GestionAffichage::enTete();
+                        cout << "options"<<endl;
+                        Sleep(2000);
+                    GestionAffichage::purge();
+                    GestionAffichage::enTete();
+                    break;
+
+                    case 4:
+                        GestionAffichage::purge();
+                        GestionAffichage::enTete();
+                        cout << "credits"<<endl;
+                        Sleep(2000);
+                    GestionAffichage::purge();
+                    GestionAffichage::enTete();
+                    break;
+
+                    case 5:
+                        gameStop();
+                    break;
+
+                    default:
+                        cout << "Erreur dans votre choix" <<endl;
+                    break;
+                }
+
         }
-
-     }
    }
 
 }

@@ -16,7 +16,7 @@ class Selecteur
         Selecteur();
         virtual ~Selecteur();
         void Locate(int x,int y);
-        void Afficher(int curs);
+        void ActionMenuPrincipal(int curs);
         int ChoisirMenuPrincipal();
 
     protected:

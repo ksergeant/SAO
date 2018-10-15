@@ -22,17 +22,22 @@ void Selecteur::Locate(int x,int y)
     SetConsoleCursorPosition(H,C);
 }
 // gestion affichage du selecteur
-void Selecteur::Afficher(int curs)
+void Selecteur::ActionMenuPrincipal(int curs)
 {
-    Locate(6,2);
-//    printf("%c ",(curs==0)?'>':' '); cout << menu1.getNouvellePartie() <<endl;
-    Locate(6,3);
-  //  printf("%c ",(curs==1)?'>':' '); cout << menu1.getContinuerPartie() <<endl;
-    Locate(6,4);
-  //  printf("%c ",(curs==2)?'>':' '); cout << menu1.getOptions() <<endl;
-    Locate(6,5);
-  //  printf("%c ",(curs==3)?'>':' '); cout << menu1.getQuitterJeu() <<endl;
-    Locate(6,7);
+    Locate(8,4);
+    printf("%c ",(curs==0)?'>':' ');
+    Locate(8,5);
+    printf("%c ",(curs==1)?'>':' ');
+    Locate(8,6);
+    printf("%c ",(curs==2)?'>':' ');
+    Locate(8,7);
+    printf("%c ",(curs==3)?'>':' ');
+    Locate(8,8);
+    printf("%c ",(curs==4)?'>':' ');
+    Locate(8,9);
+    printf("%c ",(curs==5)?'>':' ');
+    Locate(8,10);
+
 }
 
 int Selecteur::ChoisirMenuPrincipal()
@@ -41,7 +46,8 @@ int Selecteur::ChoisirMenuPrincipal()
     int touche;
     do
     {
-        Afficher(curs);
+        ActionMenuPrincipal(curs);
+        Locate(0,13);
         touche = _getch();
         if (touche==0xE0) // fleche : le code fleche renvoie 2 caracteres.
         {
@@ -52,12 +58,22 @@ int Selecteur::ChoisirMenuPrincipal()
                 curs = 2;
            else if (touche==0x50 && curs==2)
                 curs = 3;
+           else if (touche==0x50 && curs==3)
+                curs =4;
+           else if (touche==0x50 && curs==4)
+                curs =5;
+
            else if (touche==0x48 && curs==1)  // fleche haut
                 curs = 0;
            else if (touche==0x48 && curs==2)
                 curs = 1;
-          else if (touche==0x48 && curs==3)
+           else if (touche==0x48 && curs==3)
                 curs = 2;
+           else if (touche==0x48 && curs==4)
+                curs = 3;
+           else if (touche==0x48 && curs==5)
+                curs = 4;
+
         }
     } while (touche!=0x0D);  // enter
     return curs;

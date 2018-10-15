@@ -23,6 +23,7 @@ class Menu
         int getId();
         void afficheOptions();
         void setOptions(int pos, int valeur, string nomOptions);
+        int getSelecteurMenuPrincipal();
 
         virtual ~Menu();
 

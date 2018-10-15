@@ -71,3 +71,11 @@ this->lesOptions[pos].valeur = valeur;
 
 
 }
+
+int Menu::getSelecteurMenuPrincipal(){
+int action = 0;
+
+action = leSelecteur.ChoisirMenuPrincipal();
+
+return action;
+}
